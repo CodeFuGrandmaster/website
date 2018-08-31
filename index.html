@@ -2,17 +2,23 @@
 
 
 
-<html>
+<html lang="en">
+  
   <head>
-    <meta>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography - Home</title>
     <link rel="stylesheet" href="stylesHome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
+  
   <body>
     <script type="text/javascript" src="carousel.js"></script>
+    
     <header>
       
     </header>
+    
     <nav>
       <div class="link-box">
         <a class="main-link" href="index.html">Home</a>
@@ -27,34 +33,36 @@
         <a class="main-link" href="contact.html">Contact Us</a>
       </div>
     </nav>
+    
     <main>
-      
       <section id="gallery-preview">
-        <div id="slideshow-container">
-          <div class="my-slides fade">
-            <img class="slide" src="dragon.jpg">
-            <div class="caption">Caption text</div>
+        <div id="slideshow-outer">
+          <div id="slideshow-inner">
+            <button id="previous" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="my-slides fade">
+              <img class="slide" src="dragon.jpg">
+              <div class="caption">Caption text</div>
+            </div>
+            <div class="my-slides fade">
+              <img class="slide" src="dragon.jpg">
+              <div class="caption">Caption two</div>
+            </div>
+            <div class="my-slides fade">
+              <img class="slide" src="dragon.jpg">
+              <div class="caption">Caption three</div>
+            </div>
+            <div class="my-slides fade">
+              <img class="slide" src="dragon.jpg">
+              <div class="caption">Caption four</div>
+            </div>
+            <button id="next" onclick="moveSlide(1)">&#10095;</button>
           </div>
-          <div class="my-slides fade">
-            <img class="slide" src="dragon.jpg">
-            <div class="caption">Caption two</div>
-          </div>
-          <div class="my-slides fade">
-            <img class="slide" src="dragon.jpg">
-            <div class="caption">Caption three</div>
-          </div>
-          <div class="my-slides fade">
-            <img class="slide" src="dragon.jpg">
-            <div class="caption">Caption four</div>
-          </div>
-          <button id="previous" onclick="moveSlide(-1)">&#10094;</button>
-          <button id="next" onclick="moveSlide(1)">&#10095;</button>
           <div class="dots">
-            <span class="dot" onclick="setSlide(1)"></span>
-            <span class="dot" onclick="setSlide(2)"></span>
-            <span class="dot" onclick="setSlide(3)"></span>
-            <span class="dot" onclick="setSlide(4)"></span>
-          </div>
+              <span class="dot" onclick="setSlide(1)"></span>
+              <span class="dot" onclick="setSlide(2)"></span>
+              <span class="dot" onclick="setSlide(3)"></span>
+              <span class="dot" onclick="setSlide(4)"></span>
+            </div>
         </div>
       </section>
     </main>
